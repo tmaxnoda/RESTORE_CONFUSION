@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://docs.angularjs.org/examples/example-orderBy-custom-comparator/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <title>Example - example-orderBy-custom-comparator</title>
+  <link href="./style(3).css" rel="stylesheet" type="text/css">
+  
+
+  <script src="./angular.min.js(1).download"></script>
+  <script src="./script.js(3).download"></script>
+  
+
+  
+</head>
+<body ng-app="orderByExample4" class="ng-scope">
+  <div ng-controller="ExampleController" class="ng-scope">
+  <div class="friends-container custom-comparator">
+    <h3>Locale-sensitive Comparator</h3>
+    <table class="friends">
+      <tbody><tr>
+        <th>Name</th>
+        <th>Favorite Letter</th>
+      </tr>
+      <!-- ngRepeat: friend in friends | orderBy:'favoriteLetter':false:localeSensitiveComparator --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;:false:localeSensitiveComparator" class="ng-scope">
+        <td class="ng-binding">John</td>
+        <td class="ng-binding">Ä</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter':false:localeSensitiveComparator --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;:false:localeSensitiveComparator" class="ng-scope">
+        <td class="ng-binding">Adam</td>
+        <td class="ng-binding">H</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter':false:localeSensitiveComparator --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;:false:localeSensitiveComparator" class="ng-scope">
+        <td class="ng-binding">Mike</td>
+        <td class="ng-binding">Ö</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter':false:localeSensitiveComparator --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;:false:localeSensitiveComparator" class="ng-scope">
+        <td class="ng-binding">Mary</td>
+        <td class="ng-binding">Ü</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter':false:localeSensitiveComparator --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;:false:localeSensitiveComparator" class="ng-scope">
+        <td class="ng-binding">Julie</td>
+        <td class="ng-binding">Z</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter':false:localeSensitiveComparator -->
+    </tbody></table>
+  </div>
+  <div class="friends-container default-comparator">
+    <h3>Default Comparator</h3>
+    <table class="friends">
+      <tbody><tr>
+        <th>Name</th>
+        <th>Favorite Letter</th>
+      </tr>
+      <!-- ngRepeat: friend in friends | orderBy:'favoriteLetter' --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;" class="ng-scope">
+        <td class="ng-binding">Adam</td>
+        <td class="ng-binding">H</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter' --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;" class="ng-scope">
+        <td class="ng-binding">Julie</td>
+        <td class="ng-binding">Z</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter' --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;" class="ng-scope">
+        <td class="ng-binding">John</td>
+        <td class="ng-binding">Ä</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter' --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;" class="ng-scope">
+        <td class="ng-binding">Mike</td>
+        <td class="ng-binding">Ö</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter' --><tr ng-repeat="friend in friends | orderBy:&#39;favoriteLetter&#39;" class="ng-scope">
+        <td class="ng-binding">Mary</td>
+        <td class="ng-binding">Ü</td>
+      </tr><!-- end ngRepeat: friend in friends | orderBy:'favoriteLetter' -->
+    </tbody></table>
+  </div>
+</div>
+
+</body></html>

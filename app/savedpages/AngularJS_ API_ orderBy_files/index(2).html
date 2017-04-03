@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://docs.angularjs.org/examples/example-orderBy-call-manually/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <title>Example - example-orderBy-call-manually</title>
+  <link href="./style(2).css" rel="stylesheet" type="text/css">
+  
+
+  <script src="./angular.min.js(1).download"></script>
+  <script src="./script.js(2).download"></script>
+  
+
+  
+</head>
+<body ng-app="orderByExample3" class="ng-scope">
+  <div ng-controller="ExampleController" class="ng-scope">
+  <pre class="ng-binding">Sort by = age; reverse = true</pre>
+  <hr>
+  <button ng-click="sortBy(null)">Set to unsorted</button>
+  <hr>
+  <table class="friends">
+    <tbody><tr>
+      <th>
+        <button ng-click="sortBy(&#39;name&#39;)">Name</button>
+        <span class="sortorder ng-hide reverse" ng-show="propertyName === &#39;name&#39;" ng-class="{reverse: reverse}"></span>
+      </th>
+      <th>
+        <button ng-click="sortBy(&#39;phone&#39;)">Phone Number</button>
+        <span class="sortorder ng-hide reverse" ng-show="propertyName === &#39;phone&#39;" ng-class="{reverse: reverse}"></span>
+      </th>
+      <th>
+        <button ng-click="sortBy(&#39;age&#39;)">Age</button>
+        <span class="sortorder reverse" ng-show="propertyName === &#39;age&#39;" ng-class="{reverse: reverse}"></span>
+      </th>
+    </tr>
+    <!-- ngRepeat: friend in friends --><tr ng-repeat="friend in friends" class="ng-scope">
+      <td class="ng-binding">Adam</td>
+      <td class="ng-binding">555-5678</td>
+      <td class="ng-binding">35</td>
+    </tr><!-- end ngRepeat: friend in friends --><tr ng-repeat="friend in friends" class="ng-scope">
+      <td class="ng-binding">Julie</td>
+      <td class="ng-binding">555-8765</td>
+      <td class="ng-binding">29</td>
+    </tr><!-- end ngRepeat: friend in friends --><tr ng-repeat="friend in friends" class="ng-scope">
+      <td class="ng-binding">Mike</td>
+      <td class="ng-binding">555-4321</td>
+      <td class="ng-binding">21</td>
+    </tr><!-- end ngRepeat: friend in friends --><tr ng-repeat="friend in friends" class="ng-scope">
+      <td class="ng-binding">Mary</td>
+      <td class="ng-binding">555-9876</td>
+      <td class="ng-binding">19</td>
+    </tr><!-- end ngRepeat: friend in friends --><tr ng-repeat="friend in friends" class="ng-scope">
+      <td class="ng-binding">John</td>
+      <td class="ng-binding">555-1212</td>
+      <td class="ng-binding">10</td>
+    </tr><!-- end ngRepeat: friend in friends -->
+  </tbody></table>
+</div>
+
+</body></html>

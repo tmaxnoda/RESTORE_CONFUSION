@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://docs.angularjs.org/examples/example-orderBy-static/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <title>Example - example-orderBy-static</title>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  
+
+  <script src="./angular.min.js(1).download"></script>
+  <script src="./script.js.download"></script>
+  
+
+  
+</head>
+<body ng-app="orderByExample1" class="ng-scope">
+  <div ng-controller="ExampleController" class="ng-scope">
+  <table class="friends">
+    <tbody><tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>Age</th>
+    </tr>
+    <!-- ngRepeat: friend in friends | orderBy:'-age' --><tr ng-repeat="friend in friends | orderBy:&#39;-age&#39;" class="ng-scope">
+      <td class="ng-binding">Adam</td>
+      <td class="ng-binding">555-5678</td>
+      <td class="ng-binding">35</td>
+    </tr><!-- end ngRepeat: friend in friends | orderBy:'-age' --><tr ng-repeat="friend in friends | orderBy:&#39;-age&#39;" class="ng-scope">
+      <td class="ng-binding">Julie</td>
+      <td class="ng-binding">555-8765</td>
+      <td class="ng-binding">29</td>
+    </tr><!-- end ngRepeat: friend in friends | orderBy:'-age' --><tr ng-repeat="friend in friends | orderBy:&#39;-age&#39;" class="ng-scope">
+      <td class="ng-binding">Mike</td>
+      <td class="ng-binding">555-4321</td>
+      <td class="ng-binding">21</td>
+    </tr><!-- end ngRepeat: friend in friends | orderBy:'-age' --><tr ng-repeat="friend in friends | orderBy:&#39;-age&#39;" class="ng-scope">
+      <td class="ng-binding">Mary</td>
+      <td class="ng-binding">555-9876</td>
+      <td class="ng-binding">19</td>
+    </tr><!-- end ngRepeat: friend in friends | orderBy:'-age' --><tr ng-repeat="friend in friends | orderBy:&#39;-age&#39;" class="ng-scope">
+      <td class="ng-binding">John</td>
+      <td class="ng-binding">555-1212</td>
+      <td class="ng-binding">10</td>
+    </tr><!-- end ngRepeat: friend in friends | orderBy:'-age' -->
+  </tbody></table>
+</div>
+
+</body></html>

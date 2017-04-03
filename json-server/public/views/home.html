@@ -1,0 +1,75 @@
+
+    <div class="container" ng-controller="IndexController">
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+				
+                   <div class="media" >
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object img-thumbnail"  ng-src={{dishPizza.image}} alt="Uthappizza">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h2 class="media-heading">
+                        {{dishPizza.name}}
+                        <span class="label label-danger">{{dishPizza.label}}</span>
+                        <span class="badge">{{dishPizza.price | currency }}</span>
+                        </h2>
+                          <p>{{dishPizza.description}}</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+                <h3 align=center>This Month's Promotions</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+				     <div class="media" >
+                      <div class="media pull-right">
+                        <a href="#">
+                          <img class="media-object img-thumbnail"  ng-src={{monthPromo.image}} alt="Uthappizza">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h2 class="media-heading">
+                        {{monthPromo.name}}
+                        <span class="label label-danger">{{monthPromo.label}}</span>
+                        <span class="badge">{{monthPromo.price | currency }}</span>
+                        </h2>
+                          <p>{{monthPromo.description}}</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+				
+              <ul class="media-list">
+					<li class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" ng-src={{leader.image}} alt="coperateLeader">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">{{leader.name}} <small><strong> {{leader.designation}}</strong></small></h4>
+                          {{leader.description}}
+                        </div>
+                  </li>
+            </ul>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://docs.angularjs.org/examples/example-filter-date/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <title>Example - example-filter-date</title>
+  
+
+  <script src="./angular.min.js(1).download"></script>
+  
+
+  
+</head>
+<body ng-app="" class="ng-scope">
+  <span ng-non-bindable="">{{1288323623006 | date:'medium'}}</span>:
+    <span class="ng-binding">Oct 29, 2010 4:40:23 AM</span><br>
+<span ng-non-bindable="">{{1288323623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</span>:
+   <span class="ng-binding">2010-10-29 04:40:23 +0100</span><br>
+<span ng-non-bindable="">{{1288323623006 | date:'MM/dd/yyyy @ h:mma'}}</span>:
+   <span class="ng-binding">10/29/2010 @ 4:40AM</span><br>
+<span ng-non-bindable="">{{1288323623006 | date:"MM/dd/yyyy 'at' h:mma"}}</span>:
+   <span class="ng-binding">10/29/2010 at 4:40AM</span><br>
+
+</body></html>
